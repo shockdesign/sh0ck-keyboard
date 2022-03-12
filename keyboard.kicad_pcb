@@ -4852,6 +4852,9 @@
   )
 
   (gr_rect (start 86.36 111.76) (end 337.82 198.12) (layer "Edge.Cuts") (width 0.05) (fill none) (tstamp 569af787-4bd4-4801-9a4c-634cb3f1552d))
+  (gr_text "phoenix keyboard - (c) 2022 sh0ck & pelrun" (at 289.56 193.04) (layer "F.SilkS") (tstamp 9b6983ab-5e08-4595-9719-d4ecbaaf3e69)
+    (effects (font (size 2 2) (thickness 0.15) italic))
+  )
 
   (segment (start 88.9 127) (end 88.9 127.503) (width 0.25) (layer "B.Cu") (net 0) (tstamp 3081c45f-0a62-4dc8-a706-c2b3c5e194d8))
   (segment (start 104.126 129.78) (end 104.101 129.755) (width 0.25) (layer "B.Cu") (net 1) (tstamp 2e68b0eb-5b0e-429e-af64-a0dddf16715c))
