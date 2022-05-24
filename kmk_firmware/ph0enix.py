@@ -1,22 +1,25 @@
 # ph0enix designed by shockdesign & pelrun
 # https://github.com/shockdesign/sh0ck-keyboard
 # Requires CircuitPython 7.0.0 to support the RP2040 MCU
-
 import board
 
-import kb from KMKKeyboard
-
+from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC
 from kmk.modules.layers import Layers
+from kmk.scanners import DiodeOrientation
 
 keyboard = KMKKeyboard()
 keyboard.modules.append(Layers())
+
+# keyboard.debug_enabled = True
 
 keyboard.col_pins = (
     board.GP21, board.GP20, board.GP19, board.GP18, board.GP17, board.GP16, board.GP15,
     board.GP14, board.GP13, board.GP12, board.GP11
 )
 keyboard.row_pins = (board.GP2, board.GP3, board.GP4, board.GP5)
+
+keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
 FN = KC.MO(1)
 
