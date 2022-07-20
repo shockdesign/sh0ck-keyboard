@@ -14,10 +14,10 @@ keyboard.modules.append(Layers())
 # keyboard.debug_enabled = True
 
 keyboard.col_pins = (
-    board.GP21, board.GP20, board.GP11, board.GP15, board.GP14, board.GP13, board.GP12,
-    board.GP19, board.GP16, board.GP17, board.GP18
+    board.GP21, board.GP20, board.GP19, board.GP11, board.GP16, board.GP17, board.GP18,
+    board.GP12, board.GP15, board.GP14, board.GP13
 )
-keyboard.row_pins = (board.GP4, board.GP5, board.GP3, board.GP2)
+keyboard.row_pins = (board.GP5, board.GP4, board.GP2, board.GP3)
 
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
